@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   devopsdb:
-    image: poojith0422/nov:db
+    image: poojith0422/nov11:db
     ports:
       - "3306:3306"
     deploy:
@@ -11,7 +11,7 @@ services:
       - mynetwork
 
   application:
-    image: poojith0422/nov:javaapp
+    image: poojith0422/nov11:javaapp
     ports:
       - "1111:8080"
     deploy:
